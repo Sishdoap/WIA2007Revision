@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MapsTesting</string>
+    <string-array name="dropdown_category">
+        <item>Plain Water</item>
+        <item>Sweetened</item>
+        <item>Non-Sweetened</item>
+    </string-array>
+</resources>
