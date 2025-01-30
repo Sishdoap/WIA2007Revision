@@ -1,5 +1,8 @@
 package com.example.mapstesting.KidsLearningApp;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
@@ -25,6 +28,9 @@ public class MathActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_math);
 
+        SharedPreferences prefs = getSharedPreferences("quiz_prefs", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -47,8 +53,14 @@ public class MathActivity extends AppCompatActivity {
                 }
             }
 
+            editor.putInt("mathMark", score);
+            editor.apply();
+
             // Show score in a Toast message
             Toast.makeText(MathActivity.this, "Score: " + score + "/" + mathViewModel.getQuestions().size(), Toast.LENGTH_LONG).show();
+
+            Intent intent = new Intent(getApplicationContext(), MainActivityLearning.class);
+            startActivity(intent);
         });
 
 

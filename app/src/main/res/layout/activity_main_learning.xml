@@ -58,15 +58,16 @@
                     android:textSize="20sp"
                     android:layout_marginTop="20dp"
                     android:textStyle="bold"/>
-                
-                <TextView
+
+                <RatingBar
+                    android:id="@+id/ratingBarMath"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="69"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:textSize="50sp"
-                    android:id="@+id/tvMathScore"/>
+                    android:numStars="3"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:layout_marginTop="20dp"/>  <!-- Makes it non-editable -->
+
 
                 <Button
                     android:id="@+id/btnMathTest"
@@ -101,14 +102,14 @@
                     android:layout_marginTop="20dp"
                     android:textStyle="bold"/>
 
-                <TextView
+                <RatingBar
+                    android:id="@+id/ratingBarEnglish"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="69"
-                    android:textSize="50sp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:id="@+id/tvEngScore"/>
+                    android:numStars="3"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:layout_marginTop="20dp"/>
 
                 <Button
                     android:layout_width="150dp"

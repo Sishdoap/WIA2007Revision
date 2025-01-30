@@ -15,7 +15,7 @@ public class EnglishViewModel extends ViewModel {
     }
 
     private void generateQuestions() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             questions.add(new EnglishQuestion());
         }
     }

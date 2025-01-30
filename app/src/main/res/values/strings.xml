@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MapsTesting</string>
+    <string name="app_name">WIA2007Rev</string>
     <string-array name="dropdown_category">
         <item>Plain Water</item>
         <item>Sweetened</item>
