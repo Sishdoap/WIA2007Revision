@@ -47,4 +47,10 @@
         android:id="@+id/btn_water_app"
         android:text="Water App"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnQuizApp"
+        android:text="Quiz App"/>
+
 </LinearLayout>

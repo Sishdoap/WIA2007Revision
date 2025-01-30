@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Question Prompt -->
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What color is this?"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <!-- Answer Choices -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Option 1"
+            android:padding="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Option 2"
+            android:padding="10dp"/>
+    </RadioGroup>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
