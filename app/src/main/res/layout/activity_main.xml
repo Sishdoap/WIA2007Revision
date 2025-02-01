@@ -53,4 +53,10 @@
         android:id="@+id/btnQuizApp"
         android:text="Quiz App"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFragmentActivity"
+        android:text="Fragment Testing"/>
+
 </LinearLayout>

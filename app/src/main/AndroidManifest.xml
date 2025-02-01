@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MapsTesting"
         tools:targetApi="31">
         <activity
+            android:name=".FragmentTesting.MainActivityFragmentTesting"
+            android:exported="false" />
+        <activity
             android:name=".KidsLearningApp.MathActivity"
             android:exported="false" />
         <activity
@@ -29,7 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".KidsLearningApp.EnglishActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

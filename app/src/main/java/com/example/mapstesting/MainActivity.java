@@ -13,6 +13,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mapstesting.FragmentTesting.MainActivityFragmentTesting;
 import com.example.mapstesting.KidsLearningApp.MainActivityLearning;
 import com.example.mapstesting.RoomTesting.WaterTrackingHomeActivity;
 import com.example.mapstesting.RoomTesting.WaterTrackingMainActivity;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnReset = findViewById(R.id.btn_reset);
         Button btnWaterApp = findViewById(R.id.btn_water_app);
         Button btnQuizApp = findViewById(R.id.btnQuizApp);
+        Button fragmentTesting = findViewById(R.id.btnFragmentActivity);
 
         btnWaterApp.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, WaterTrackingHomeActivity.class);
@@ -47,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnQuizApp.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), MainActivityLearning.class);
+            startActivity(intent);
+        });
+
+        fragmentTesting.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivityFragmentTesting.class);
             startActivity(intent);
         });
 
